@@ -13,7 +13,7 @@ namespace Web.Something
     public class SomeController
     {
         [HttpGet]
-        public async Task<HttpResponseMessage> Export(Guid id)
+        public Task<HttpResponseMessage> Export(Guid id)
         {
             // Build the file name.
             var fileDownloadName = "TODO: Build file name";
